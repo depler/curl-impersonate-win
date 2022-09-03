@@ -14,7 +14,6 @@ MSYS2 is needed to build binaries. Steps:
 1. Download and install MSYS2 (https://www.msys2.org/)
 2. Run MSYS2 from start menu and update packages with command: `pacman -Suy`
 3. Install additional packages: `pacman -S mingw-w64-x86_64-make mingw-w64-x86_64-cmake mingw-w64-x86_64-nasm mingw-w64-x86_64-gcc`
-4. 
 
 # Build
 1. Download and unpack curl and boringssl source code into according folders (see versions)
