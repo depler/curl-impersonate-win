@@ -20,7 +20,7 @@ set ZSTD_PATH=zstd_stub
 
 set BROTLI=1
 set BROTLI_PATH=brotli_stub
-set BROTLI_LIBS=-lbrotlidec -lbrotlicommon -lidn2 -lunistring -liconv
+set BROTLI_LIBS=-lbrotlidec -lbrotlicommon
 
 set NGHTTP2=1
 set NGHTTP2_PATH=nghttp2_stub
@@ -35,7 +35,7 @@ set OPENSSL_LIBS=-lssl -lcrypto
 
 cd %ROOT%curl
 mingw32-make mingw32-clean
-mingw32-make mingw32 -j CC="gcc -DNGHTTP2_STATICLIB"
+mingw32-make mingw32 -j
 
 mkdir bin
 move /y lib\*.dll bin
