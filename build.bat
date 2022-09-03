@@ -5,7 +5,7 @@ set ROOT=%~dp0
 
 cd %ROOT%boringssl
 rmdir /s /q lib
-cmake.exe -G "Ninja" -S . -B lib -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER=gcc.exe -DCMAKE_C_FLAGS="-Wno-error=stringop-overflow= -Wno-error=array-bounds"
+cmake.exe -G "Ninja" -S . -B lib -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER=gcc.exe
 ninja.exe -C lib crypto ssl
 move /y lib\crypto\libcrypto.a lib\libcrypto.a
 move /y lib\ssl\libssl.a lib\libssl.a
