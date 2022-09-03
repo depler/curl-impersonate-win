@@ -19,3 +19,6 @@ MSYS2 is needed to build binaries. Steps:
 1. Download and unpack curl and boringssl source code into according folders (see versions)
 2. Run scripts `patch_curl.bat` and `patch_boringssl.bat` to patch source code
 3. Run script `build.bat` to build binaries. Ready to use binaries are located within `curl\bin` folder.
+
+In case if everything goes fine you should see this:
+![image](https://user-images.githubusercontent.com/13541699/188266250-4d719755-2f9b-43c7-96e0-32bb54fbd132.png)
