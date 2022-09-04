@@ -1,6 +1,6 @@
 # curl-impersonate-win
 
-A special build of curl that can impersonate Chrome (Windows only).
+A special build of curl for Windows that can impersonate Chrome.
 
 Original idea and patches from https://github.com/lwthiker/curl-impersonate
 
