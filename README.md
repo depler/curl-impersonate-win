@@ -1,6 +1,6 @@
 # curl-impersonate-win
 
-A special build of curl for Windows that can impersonate Chrome.
+A special build of curl for Windows that can impersonate Chrome and Safari.
 
 Original idea and patches from https://github.com/lwthiker/curl-impersonate
 
@@ -21,4 +21,12 @@ MSYS2 is needed to build binaries. Steps:
 3. Run script `build.bat` to build binaries. Ready to use binaries are located within `curl\bin` folder.
 
 In case if everything goes fine you should see this:
+
 ![image](https://user-images.githubusercontent.com/13541699/188266250-4d719755-2f9b-43c7-96e0-32bb54fbd132.png)
+
+# Run
+There are couple scripts inside release archive. Each of them can impersonate different browser. For example:
+
+`curl_chrome104 https://www.google.com/search?q=cat --output google.html`
+
+`curl_safari15_5 https://www.apple.com --output apple.html`
