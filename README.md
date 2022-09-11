@@ -27,6 +27,6 @@ In case if everything goes fine you should see this:
 # Run
 There are couple scripts inside release archive. Each of them can impersonate different browser. For example:
 
-`curl_chrome104 https://www.google.com/search?q=cat --output google.html`
+`curl_chrome104 --url https://www.google.com/search?q=cat --output google.html`
 
-`curl_safari15_5 https://www.apple.com --output apple.html`
+`curl_safari15_5 --url https://www.apple.com --output apple.html`
