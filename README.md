@@ -25,7 +25,7 @@ In case if everything goes fine you should see this:
 ![image](https://user-images.githubusercontent.com/13541699/188266250-4d719755-2f9b-43c7-96e0-32bb54fbd132.png)
 
 # Run
-There are couple scripts inside release archive. Each of them can impersonate different browser. For example:
+Executables and scripts are located inside release archive. Scripts can impersonate different browser, for example:
 
 `curl_chrome104 --url https://www.google.com/search?q=cat --output google.html`
 
