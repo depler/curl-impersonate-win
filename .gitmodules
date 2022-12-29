@@ -1,0 +1,6 @@
+[submodule "curl_original"]
+	path = curl_original
+	url = https://github.com/curl/curl.git
+[submodule "boringssl_original"]
+	path = boringssl_original
+	url = https://github.com/google/boringssl.git
