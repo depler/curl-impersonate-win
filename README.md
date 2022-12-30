@@ -16,8 +16,8 @@ MSYS2 is needed to build binaries. Steps:
 3. Install additional packages: `pacman -S patch mingw-w64-x86_64-make mingw-w64-x86_64-cmake mingw-w64-x86_64-nasm mingw-w64-x86_64-gcc mingw-w64-x86_64-go`
 
 # Build
-1. Download and unpack curl and boringssl source code into according folders (see versions)
-2. Run scripts `patch_curl.bat` and `patch_boringssl.bat` to patch source code
+1. Clone this repository with --recursive attribute to get BoringSSL and Curl submodules.
+2. Run script `copy_and_patch.bat` to copy original source codes to patchable directories and patch source code.
 3. Run script `build.bat` to build binaries. Ready to use binaries are located within `curl\bin` folder.
 
 In case if everything goes fine you should see this:
