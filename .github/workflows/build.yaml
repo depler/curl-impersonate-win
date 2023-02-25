@@ -1,0 +1,38 @@
+name: build
+on:
+  push:
+    tags:
+      - "*"
+jobs:
+  build:
+    name: Build binaries
+    permissions:
+      contents: write
+    runs-on: windows-2019
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+      - uses: msys2/setup-msys2@v2
+        name: Install msys
+        with:
+          update: true
+          install: >-
+            patch
+            mingw-w64-x86_64-make
+            mingw-w64-x86_64-cmake
+            mingw-w64-x86_64-nasm
+            mingw-w64-x86_64-gcc
+            mingw-w64-x86_64-go
+      - name: Copy and patch
+        shell: msys2 {0}
+        run: ./copy_and_patch.bat
+      # - name: Setup tmate session
+      #   uses: mxschmitt/action-tmate@v3
+      - name: Build
+        shell: msys2 {0}
+        run: ./build.bat
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: ./curl/bin/*

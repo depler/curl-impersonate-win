@@ -1,4 +1,8 @@
-set MINGW64=c:\msys64\mingw64
+if %GITHUB_ACTIONS%=="" (
+    set MINGW64=c:\msys64\mingw64
+) else (
+    set MINGW64=d:\a\_temp\msys64\mingw64
+)
 set GOROOT=%MINGW64%\lib\go
 set PATH=%MINGW64%\bin;%PATH%
 set ROOT=%~dp0
@@ -34,8 +38,8 @@ set OPENSSL_LIBPATH=%ROOT%boringssl\lib
 set OPENSSL_LIBS=-lssl -lcrypto
 
 cd %ROOT%curl
-mingw32-make mingw32-clean
-mingw32-make mingw32 -j
+mingw32-make -f Makefile.dist mingw32-clean
+mingw32-make -f Makefile.dist mingw32 -j
 
 mkdir bin
 move /y lib\*.dll bin
