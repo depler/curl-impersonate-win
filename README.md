@@ -23,7 +23,7 @@ MSYS2 is needed to build binaries. Steps:
 
 In case if everything goes fine you should see this:
 
-![image](https://user-images.githubusercontent.com/13541699/188266250-4d719755-2f9b-43c7-96e0-32bb54fbd132.png)
+![image](https://user-images.githubusercontent.com/13541699/221516365-76990456-aeee-4c65-bd6c-2e9182f5c93a.png)
 
 # Run
 Executables and scripts are located inside release archive. Scripts can impersonate different browser, for example:
