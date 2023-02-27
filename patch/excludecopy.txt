@@ -1,3 +1,14 @@
+.circleci\
+.github\
+.lift\
+.reuse\
+docs\
+LICENSES\
+projects\
+scripts\
+winbuild\
+zuul.d\
+tests\
 .git
 .gitignore
 .gitattribute

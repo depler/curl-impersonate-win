@@ -6,4 +6,4 @@ cd %~dp0boringssl
 %sed% -i 's/-ggdb//g' CMakeLists.txt
 %sed% -i 's/-Werror//g' CMakeLists.txt
 
-pause
+cd ..

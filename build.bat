@@ -34,8 +34,8 @@ set OPENSSL_LIBPATH=%ROOT%boringssl\lib
 set OPENSSL_LIBS=-lssl -lcrypto
 
 cd %ROOT%curl
-mingw32-make mingw32-clean
-mingw32-make mingw32 -j
+mingw32-make mingw32-clean -f Makefile.dist
+mingw32-make mingw32 -f Makefile.dist -j
 
 mkdir bin
 move /y lib\*.dll bin
