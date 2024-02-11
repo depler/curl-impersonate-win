@@ -6,9 +6,9 @@ Original idea and patches from https://github.com/lwthiker/curl-impersonate
 
 # Version
 Current version based on:
-* Curl (https://github.com/curl/curl): v7.84.0
+* Curl (https://github.com/curl/curl): v8.1.1
 * BoringSSL (https://github.com/google/boringssl): 3a667d10e94186fd503966f5638e134fe9fb4080
-* curl-impersonate (https://github.com/lwthiker/curl-impersonate): v0.5.4
+* curl-impersonate (https://github.com/lwthiker/curl-impersonate): v0.6.0
 
 # Environment
 MSYS2 is needed to build binaries. Steps:
@@ -23,7 +23,7 @@ MSYS2 is needed to build binaries. Steps:
 
 In case if everything goes fine you should see this:
 
-![image](https://user-images.githubusercontent.com/13541699/221516365-76990456-aeee-4c65-bd6c-2e9182f5c93a.png)
+![image](https://github.com/depler/curl-impersonate-win/assets/13541699/1a2a5e75-6dd5-4168-a6a8-89cb521e7562)
 
 # Run
 Executables and scripts are located inside release archive. Scripts can impersonate different browser, for example:
