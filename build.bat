@@ -11,7 +11,6 @@ move /y lib\crypto\libcrypto.a lib\libcrypto.a
 move /y lib\ssl\libssl.a lib\libssl.a
 
 set CFG=-ipv6 -zlib -zstd -brotli -nghttp2 -idn2 -ssl
-set ENABLE_WEBSOCKETS=ON
 
 set OPENSSL_PATH=%ROOT%boringssl
 set OPENSSL_LIBPATH=%ROOT%boringssl\lib
