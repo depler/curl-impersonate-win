@@ -10,7 +10,8 @@ ninja.exe -C lib crypto ssl
 move /y lib\crypto\libcrypto.a lib\libcrypto.a
 move /y lib\ssl\libssl.a lib\libssl.a
 
-set CFG=-zlib -zstd -brotli -nghttp2 -idn2 -ssl
+set CFG=-ipv6 -zlib -zstd -brotli -nghttp2 -idn2 -ssl
+set ENABLE_WEBSOCKETS=ON
 
 set OPENSSL_PATH=%ROOT%boringssl
 set OPENSSL_LIBPATH=%ROOT%boringssl\lib
@@ -20,7 +21,9 @@ cd %ROOT%curl
 mingw32-make mingw32-clean -f Makefile.dist
 mingw32-make mingw32 -f Makefile.dist -j
 
+rmdir bin /s /q
 mkdir bin
+
 move /y lib\*.dll bin
 move /y lib\*.a bin
 move /y src\*.exe bin
